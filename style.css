@@ -1,0 +1,167 @@
+/* Reset some default styles */
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styles for the dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column; /* Ensure a column layout for proper stacking */
+}
+
+.navigation-bar {
+    width: 100%;
+    background-color: #333; /* Dark gray color */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: flex-start; /* Align items to the top */
+    position: fixed;
+    top: 0; /* Fix the navigation bar at the top */
+    left: 0; /* Align the left edge to the left */
+    z-index: 1000; /* Ensure the navigation bar is on top of other content */
+}
+
+.navigation-bar h2 {
+    margin: 0;
+    margin-right: auto; /* Push "Welcome" text to the right */
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigation-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-right: 50px; /* Adjust the margin-right value to create a gap */
+    padding: 10px 20px; /* Padding for larger button size */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-link:hover {
+    background-color: #555;
+}
+
+.main-content {
+    flex: 1;
+    padding: 60px 20px 20px; /* Add top padding to move content down the page */
+	 margin-top: -4px;
+}
+
+/* Add your additional styles below */
+
+/* Styles for the add item form */
+#addItemForm {
+    display: none;
+    margin-top: 20px;
+}
+
+#addItemForm label {
+    margin-bottom: 8px;
+}
+
+#addItemForm input[type="text"],
+#addItemForm input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#addItemForm button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addItemForm button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styles for the current inventory display */
+#currentInventory {
+    margin-top: 20px;
+}
+
+#currentInventory ul {
+    list-style: none;
+    padding: 0;
+}
+
+#currentInventory li {
+    margin-bottom: 10px;
+}
+
+/* Styles for buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for the login form */
+.login-container {
+    margin: 100px auto;
+    width: 300px;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.login-container label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #666;
+}
+
+.login-container input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
